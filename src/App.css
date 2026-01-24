@@ -2,16 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
-  color: #222;
+  background: #1a202c;
+  color: #e2e8f0;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
   padding: 2rem 1rem;
-  background: #fff;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  background: #2d3748;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.3);
   min-height: 100vh;
 }
 
@@ -21,13 +21,13 @@ header {
 }
 
 .subtitle {
-  color: #555;
+  color: #a0aec0;
 }
 
 footer {
   margin-top: 3rem;
   text-align: center;
-  color: #888;
+  color: #a0aec0;
   font-size: 0.95em;
 }
 
@@ -36,7 +36,7 @@ footer {
 }
 
 h2 {
-  color: #0064a5;
+  color: #63b3ed;
   margin-bottom: 0.5em;
 }
 
@@ -47,11 +47,11 @@ h2 {
 }
 
 .repo-card {
-  background: #f2f7fa;
+  background: #4a5568;
   border-radius: 8px;
   padding: 1rem;
   width: 270px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,7 +63,7 @@ h2 {
 
 .repo-meta {
   margin-top: 0.8em;
-  color: #456;
+  color: #a0aec0;
   font-size: 0.95em;
   display: flex;
   justify-content: space-between;
@@ -74,20 +74,20 @@ nav.nav {
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
-  background: #f2f7fa;
+  background: #4a5568;
   padding: 0.75rem 0;
   border-radius: 8px;
 }
 
 nav.nav a {
   text-decoration: none;
-  color: #0064a5;
+  color: #63b3ed;
   font-weight: bold;
   transition: color 0.2s;
 }
 
 nav.nav a:hover {
-  color: #004475;
+  color: #90cdf4;
 }
 
 .resume ul {
@@ -107,19 +107,21 @@ nav.nav a:hover {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  color: #0064a5;
+  color: #63b3ed;
 }
 
 .contact input, .contact textarea {
   padding: 0.5em;
-  border: 1px solid #b4c9d9;
+  border: 1px solid #718096;
   border-radius: 4px;
   font-size: 1em;
+  background: #2d3748;
+  color: #e2e8f0;
 }
 
 .contact button {
-  background: #0064a5;
-  color: #fff;
+  background: #3182ce;
+  color: #1a202c;
   border: none;
   border-radius: 4px;
   padding: 0.75em 1.5em;
@@ -129,5 +131,53 @@ nav.nav a:hover {
 }
 
 .contact button:hover {
-  background: #004475;
+  background: #4299e1;
+}
+
+.skills, .specialisation {
+  margin-top: 2rem;
+}
+
+.skills h3, .specialisation h3 {
+  color: #63b3ed;
+  margin-bottom: 1rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.skills li {
+  background: #4a5568;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.specialisation ul {
+  list-style: disc;
+  margin: 0 0 1em 1.5em;
+  padding-left: 1.5em;
+}
+
+.specialisation li {
+  margin-bottom: 0.5rem;
+}
+
+.download-btn, .repo-link {
+  display: inline-block;
+  background: #3182ce;
+  color: #1a202c;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.download-btn:hover, .repo-link:hover {
+  background: #4299e1;
 }

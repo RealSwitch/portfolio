@@ -22,7 +22,7 @@ export default function RepoList({ username }) {
           {repos.map((repo) => (
             <div className="repo-card" key={repo.id}>
               <h3>
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="repo-link">
                   {repo.name}
                 </a>
               </h3>
