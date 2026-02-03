@@ -1,8 +1,7 @@
 {
-  "name": "realswitch-portfolio",
+  "name": "sello-makena",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://realswitch.github.io/portfolio",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
